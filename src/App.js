@@ -1,5 +1,7 @@
+import { PageLayout } from "./components/layout";
+
 function App() {
-  return <div>save the date</div>;
+  return <PageLayout>save the date</PageLayout>;
 }
 
 export default App;
