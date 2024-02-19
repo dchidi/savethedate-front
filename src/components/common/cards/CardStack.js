@@ -1,14 +1,22 @@
+import { Login, Page1, Page2 } from "../../../content/pages";
 import Card from "./Card";
-import style from "./cards.module.css";
+import { useState } from "react";
 
-const CardStack = ({ pages = [] }) => {
-  return (
-    <>
-      {pages.map((page, index) => (
-        <Card data={page} />
-      ))}
-    </>
-  );
+const CardStack = () => {
+  const [pageIndex, setPageIndex] = useState(0);
+
+  const page_loader = (index) => {
+    switch (index) {
+      case 0:
+        return <Card Component={Login} />;
+      case 1:
+        return <Card hasNavigation={true} Component={Page1} />;
+      case 2:
+        return <Card hasNavigation={true} Component={Page2} />;
+    }
+  };
+
+  return <div>{page_loader(pageIndex)}</div>;
 };
 
 export default CardStack;
