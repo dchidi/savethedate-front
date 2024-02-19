@@ -4,9 +4,16 @@ import style from "./pages.module.css";
 const Login = () => {
   return (
     <div className={style.page1}>
-      <div>writeup with couples name and date of event</div>
+      <div>Save the date 11-05-2024.</div>
       <div className={style.form}>
-        <InputField />
+        <InputField
+          label="Invitation PassCode"
+          placeholder="Enter your 6 digit code"
+        />
+        <p className={style.message}>
+          Please pre-order your meals for the marriage dinner party to ensure a
+          smooth and enjoyable dining experience.
+        </p>
       </div>
     </div>
   );
