@@ -1,6 +1,6 @@
 import { BackIcon } from "../../../assets/icons";
 import style from "./cards.module.css";
-const Card = ({ Component, hasNavigation = false }) => {
+export const Card = ({ Component, hasNavigation = false }) => {
   return (
     <div className={style.card}>
       {hasNavigation && (
@@ -16,4 +16,10 @@ const Card = ({ Component, hasNavigation = false }) => {
   );
 };
 
-export default Card;
+export const Card2 = ({ Component, hasNavigation = false }) => {
+  return (
+    <div className={style.card2}>
+      <Component />
+    </div>
+  );
+};

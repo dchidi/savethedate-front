@@ -1,4 +1,4 @@
 import CardStack from "./CardStack";
-import Card from "./Card";
+import { Card, Card2 } from "./Card";
 
-export { CardStack, Card };
+export { CardStack, Card, Card2 };
