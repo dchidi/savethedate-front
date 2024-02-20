@@ -11,7 +11,7 @@ const Login = () => {
           placeholder="Enter your 6 digit code"
         />
         <p className={style.message}>
-          Please pre-order your meals for the marriage dinner party to ensure a
+          Please pre-order your meals for the marriage after party to ensure a
           smooth and enjoyable dining experience.
         </p>
       </div>
