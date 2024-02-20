@@ -1,5 +1,5 @@
 .input {
-  min-width: 400px;
+  width: 400px;
   height: 70px;
   text-indent: 10px;
   padding: 5px;
@@ -20,4 +20,23 @@
 .input,
 .label {
   font-weight: 600;
+}
+
+/* Smaller Mobile View (e.g., iPhone SE) */
+@media only screen and (max-width: 767px) {
+  .input {
+    width: 300px;
+    font-size: 1.1em;
+  }
+  .label {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Landscape View */
+@media only screen and (max-width: 991px) and (orientation: landscape) {
+  .input {
+    width: 400px;
+    font-size: 1.3em;
+  }
 }
