@@ -9,7 +9,9 @@ const Card = ({ Component, hasNavigation = false }) => {
         </div>
       )}
 
-      <Component />
+      <div className={style.scroll}>
+        <Component />
+      </div>
     </div>
   );
 };

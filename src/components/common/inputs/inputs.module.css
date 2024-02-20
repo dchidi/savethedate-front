@@ -5,6 +5,7 @@
   padding: 5px;
   text-align: center;
   font-size: 1.3em;
+  letter-spacing: 0.1em;
   border: 1px solid #999;
   outline: none;
 }
@@ -13,6 +14,10 @@
   color: #433092;
 }
 .label {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+.input,
+.label {
+  font-weight: 600;
 }
