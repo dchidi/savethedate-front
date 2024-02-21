@@ -1,10 +1,12 @@
+import { DeleteIcon } from "../assets/icons";
 import { dinning } from "../assets/image";
 import { InputField } from "../components/common/inputs";
 import style from "./pages.module.css";
+import { useState } from "react";
 
 const Login = () => {
   return (
-    <div className={style.page1}>
+    <div>
       <p className={style.topLabel}>Save the date 11-05-2024.</p>
       <div className={style.form}>
         <InputField
@@ -19,15 +21,33 @@ const Login = () => {
     </div>
   );
 };
+
+export const GuestList = () => {
+  const [isDeleted, setIsDeleted] = useState(true);
+  return (
+    <li className={`${style.guest} ${isDeleted ? style.deleteItem : ""}`}>
+      <div>James Ugo</div>
+      <div className={style.actions}>
+        <input type="checkbox" /> <DeleteIcon className={style.delete} />
+      </div>
+    </li>
+  );
+};
 const Page1 = () => {
   return (
     <div className={style.page1}>
       <img src={dinning} className={style.image} />
 
       <div className={style.content}>
-        <h2>Guest List</h2>
+        <h2>Guest Check List</h2>
         <ul>
-          <li>James Ugo</li>
+          {/* <li className={style.guest}>
+            <div>James Ugo</div>
+            <div className={style.actions}>
+              <input type="checkbox" /> <DeleteIcon className={style.delete} />
+            </div>
+          </li> */}
+          <GuestList />
           <li>Tega Ugo</li>
           <li>Chidiukwu Ogadinma Duru</li>
           <li>James Ugo</li>

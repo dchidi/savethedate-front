@@ -1,3 +1,6 @@
-import { MdOutlineKeyboardBackspace as BackIcon } from "react-icons/md";
+import {
+  MdOutlineKeyboardBackspace as BackIcon,
+  MdDelete as DeleteIcon,
+} from "react-icons/md";
 
-export { BackIcon };
+export { BackIcon, DeleteIcon };
