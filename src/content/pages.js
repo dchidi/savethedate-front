@@ -33,6 +33,7 @@ const Page1 = () => {
           <li>James Ugo</li>
           <li>Tega Ugo</li>
           <li>Chidiukwu Ogadinma Duru</li>
+          <li>James Ugo</li>
         </ul>
       </div>
     </div>
